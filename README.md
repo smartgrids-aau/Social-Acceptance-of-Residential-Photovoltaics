@@ -1,18 +1,17 @@
-## Social Acceptance, Biodiversity, and the Modelling of Residential and Ground-Mounted Photovoltaic Potential in Austria
+# Social Acceptance, Biodiversity, and the Modelling of Residential and Ground-Mounted Photovoltaic Potential in Austria
 
-**Seminar:** Information and Communications Engineering — Research Project
-**Topic:** Electricity Demand Forecasting and Renewable Energy Systems
-**Credit Load:** 6 ECTS (150 hours)
+**Seminar:** Information and Communications Engineering — Research Project  
+**Topic:** Electricity Demand Forecasting and Renewable Energy Systems  
+**Credit Load:** 6 ECTS (150 hours)  
 
 
-### Background and Motivation  
+## Background and Motivation
 Austria has committed to generating 100% of its electricity from domestic renewable sources by 2030, requiring an additional 11 TWh/a from photovoltaics (PV) alone — a roughly sixfold increase compared to 2019 production levels. Meeting this target involves not only assessing the physical and technical potential of available surfaces and land, but understanding *who decides* whether a PV system gets installed and *why*. Residential rooftop PV, which could theoretically satisfy the entire 2030 target on its own, is fundamentally constrained by individual and community-level decisions — willingness to pay, trust in institutions, perceived fairness, and attitudes toward the landscape. At the same time, ground-mounted PV systems face increasing scrutiny regarding land-use competition and biodiversity impacts, with evidence showing that social acceptance is heavily driven by where a system is sited and how it is designed.[^1][^2]
 
 This research project sits at the intersection of these challenges. You will carry out a structured literature review on the social, economic, and attitudinal drivers of PV adoption, integrate insights from recent transdisciplinary Austrian research (including the BioPV project), and build upon existing spatial PV potential modelling methodologies to develop an **enhanced, socially and ecologically weighted PV potential model for Austria**. The goal is a unified analytical framework that goes beyond purely technical potential and incorporates social acceptance, biodiversity sensitivity, and policy effectiveness into a scenario-based simulation tool.
 
 
-
-### Key Research Papers  
+## Key Research Papers
 Two foundational papers are provided and must be thoroughly studied before work begins:
 
 1. **Mikovits et al. (2021)** — *"A Spatially Highly Resolved Ground Mounted and Rooftop Potential Analysis for Photovoltaics in Austria"* (ISPRS Int. J. Geo-Inf.). This paper introduces the open-source spatial PV potential modelling framework for Austria using PVGIS solar radiation data, IACS agricultural land-use data, and building footprint cadastre data. It presents results across five land-use scenarios and quantifies the gap between technical potential and policy goals for 2030 and 2050.[^1]
@@ -20,7 +19,7 @@ Two foundational papers are provided and must be thoroughly studied before work 
 
 
 
-### Research Questions  
+## Research Questions  
 Your work should address the following questions:
 
 1. What social, economic, and attitudinal factors most strongly predict residential PV adoption, and how do these vary across Austrian regions and household types?
@@ -32,13 +31,11 @@ Your work should address the following questions:
 
 
 
-### Your Task  
+## Your Task
 The work is structured in four connected phases:
 
-**Phase 1 — Literature Review on Social Acceptance of PV Adoption**
-
+**Phase 1 — Literature Review on Social Acceptance of PV Adoption**  
 Conduct a systematic literature review covering the key determinants of residential and community-level PV adoption. The review must cover at minimum the following dimensions:
-
 - **Attitudinal and psychological factors:** environmental concern, climate attitudes, trust in institutions, perceived risk and benefit, social norms, activism intentions
 - **Economic factors:** willingness to pay, feed-in tariff design, upfront cost barriers, energy community models, benefit-sharing mechanisms
 - **Policy and regulatory factors:** planning law, spatial zoning, grid connection requirements, subsidy design, information provision
@@ -46,7 +43,6 @@ Conduct a systematic literature review covering the key determinants of resident
 - **Contextual and spatial factors:** urban vs. rural differences, Alpine vs. lowland settings, tourism pressure, place attachment and landscape identity
 
 You should consult the BioPV conjoint survey findings as an empirical anchor  and extend the review with peer-reviewed literature from journals such as *Energy Research \& Social Science*, *Applied Energy*, *Renewable and Sustainable Energy Reviews*, and *Energy Policy*. The output of Phase 1 is a structured review section (~1,500 words) that synthesises findings and identifies which factors are most evidenced for the Austrian context.[^2]
-
 
 **Phase 2 — Development of a Social Acceptance Index (SAI) and Biodiversity Conflict Index (BCI)**  
 Building on the literature review and the BioPV empirical results, you will develop two quantitative spatial indices:
@@ -66,7 +62,6 @@ Building on the literature review and the BioPV empirical results, you will deve
 Both indices should be clearly documented with a transparent weighting methodology, justified by the literature and the BioPV empirical evidence. Sensitivity to alternative weighting choices should be discussed.
 
 
-
 **Phase 3 — Enhanced PV Potential Calculation for Austria**  
 Using the spatial framework established by Mikovits et al. (2021) as your methodological baseline, you will compute an **enhanced PV potential estimate** that integrates the SAI and BCI alongside the existing technical parameters. Specifically:[^1]
 
@@ -77,7 +72,6 @@ Using the spatial framework established by Mikovits et al. (2021) as your method
 - Compare your results against the Mikovits et al. findings and interpret the differences, particularly regarding which regions show the largest reduction in feasible potential once social and ecological factors are applied.
 
 Where full GIS replication is not feasible within the project scope, a scenario-based parametric analysis using the published Mikovits et al. data at the municipal level as input, combined with your computed SAI and BCI layers, is an acceptable approach. This should be clearly justified in the methodology.
-
 
 
 **Phase 4 — Policy Analysis and Scenario Simulation**  
@@ -92,9 +86,8 @@ For each policy scenario, compute the resulting change in socially and ecologica
 
 
 
-### Deliverables  
+## Deliverables  
 You are expected to submit the following:
-
 1. **Written Report** — A structured scientific report of approximately 6,000–8,000 words covering:
     - Introduction and motivation, including Austria's 2030 renewable energy context
     - Literature review (Phase 1 output): social, economic, and attitudinal drivers of PV adoption
@@ -107,7 +100,7 @@ You are expected to submit the following:
 
 
 
-### Recommended Starting Points  
+## Recommended Starting Points  
 - Read both provided papers in full before beginning Phase 1. Pay particular attention to the Mikovits et al. methodology section (Section 2) and the BioPV WP2, WP3, and WP4 results
 - Explore the open-source PV potential model code (https://github.com/inwe-boku/pvaustria2021) to understand what inputs and outputs are available for reuse or adaptation
 - Access the open Austrian data sources referenced in both papers: PVGIS (https://ec.europa.eu/jrc/en/PVGIS), IACS/INVEKOS land use data (https://data.gv.at), the Austrian digital terrain model, and the Umweltbundesamt protected area datasets
